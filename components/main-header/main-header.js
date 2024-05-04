@@ -30,5 +30,3 @@ export default function MainHeader(){
    </>
   )
 }
-
-//sUsing Client Components Efficiently
