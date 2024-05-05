@@ -16,6 +16,7 @@ const imageInput = useRef();
     const file = event.target.files[0];
 
     if (!file){
+      setPickedImage(null);
       return;
     }
 
@@ -48,7 +49,9 @@ const imageInput = useRef();
         accept='image/png, image/jpeg, image/jpg'
         name={name}
         ref={imageInput}
-        onChange={handleImgChange}/>
+        onChange={handleImgChange}
+        required
+        />
         <button 
         className={classes.button} 
         type='button'
